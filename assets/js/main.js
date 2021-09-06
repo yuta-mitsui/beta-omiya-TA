@@ -19,7 +19,7 @@ const app = Vue.createApp({
       correctAnswer: {
         stage1: {
           q1: '1111',
-          q2:'１１１１'
+          ||q1:'１１１１'
         },
         stage2: {
           q1: 'いいい',
@@ -101,7 +101,7 @@ app.component('answer-input', {
     return {
       /* 送信ボタン上下に表示されるメッセージ */
       okMessage: '正解！',
-      ngMessage: 'そのキーワードは違うようだぞ！？',
+      ngMessage: 'そのキーワードは違うようだぞ',
       message: '',
       inputAnswer: '',
     }
